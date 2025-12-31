@@ -25,9 +25,14 @@ const RandomColorGenerator = () => {
     setcolor(`rgb(${r},${g},${b})`);
   };
   useEffect(() => {
-    if (typeOfColor === "rgb") handleRandomRgbColor();
-    else handleRandomHexColor();
+    const id = setTimeout(() => {
+      if (typeOfColor === "rgb") handleRandomRgbColor();
+      else handleRandomHexColor();
+    }, 0);
+
+    return () => clearTimeout(id);
   }, [typeOfColor]);
+
   return (
     <>
       <div
