@@ -1,4 +1,5 @@
 import Accordian2 from "./component/accordian2/acc";
+import RandomColorGenerator from "./component/RandomColor_Generator";
 
 
 const App = () => {
@@ -6,7 +7,8 @@ const App = () => {
     <div>
       {/* <Accordian /> */}
 
-      <Accordian2 />
+      {/* <Accordian2 /> */}
+      {/* <RandomColorGenerator /> */}
     </div>
   );
 };
