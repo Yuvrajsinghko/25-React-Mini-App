@@ -1,17 +1,10 @@
-import { useState } from "react";
+import { useMemo } from 'react';
 
-export default function App() {
-  const [items, setItems] = useState([1, 2, 3]);
+export default function Counter() {
+  const expensiveCalculation = useMemo(() => {
+    console.log('Calculating...');
+    return 100 + 200;
+  });
 
-  function handleClick() {
-    items.push(4);
-    setItems(items);
-  }
-
-  return (
-    <>
-      <div>Items: {items.join(", ")}</div>
-      <button onClick={handleClick}>Add Item</button>
-    </>
-  );
+  return <div>Result: {expensiveCalculation}</div>;
 }
