@@ -33,7 +33,6 @@
 .circle-indicators {
   display: flex;
   position: absolute;
-  background-color: aquamarine;
   bottom: 1rem;
 }
 
