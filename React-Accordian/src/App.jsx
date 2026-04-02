@@ -1,4 +1,5 @@
 import Accordian2 from "./component/accordian2/acc";
+import QCode from "./component/QR-Code_generator";
 import RandomColorGenerator from "./component/RandomColor_Generator";
 import StarRating from "./component/StarRating";
 
@@ -10,7 +11,8 @@ const App = () => {
 
       {/* <Accordian2 /> */}
       {/* <RandomColorGenerator /> */}
-      <StarRating noOfStars={10}/>
+      {/* <StarRating noOfStars={10}/> */}
+      <QCode />
     </div>
   );
 };

@@ -1,0 +1,24 @@
+.main-t{
+    display: flex;
+    background-color: cornflowerblue;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+    width: 100vw;
+}
+.qr{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input{
+    border: 2px solid black;
+    padding: 10px 20px;
+}
+button{
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
